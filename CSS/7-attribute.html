@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        a[target="_blank"] {
+            color: red;
+        }
+        
+        p[title='belajar']{
+            color: blueviolet;
+        }
+        p[title~='belajar']{
+            background-color: rgb(255, 0, 0);
+        }
+        p[title|='belajar']{
+            text-align: center;
+        }
+        p[title^='belajar']{
+            text-transform: uppercase;
+        }
+        p[title$='belajar']{
+           color: white;
+        }
+        p[title*='belajar']{
+           text-align: right;
+        }
+        p[title*='belajar']{
+            text-align:justify;
+           
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <a href="http://" target="_blank" >contoh 1</a>
+    <a href="http://" " > contoh 2</a>
+    <a href="http://" target="_self" >contoh 3</a>
+    <a href="http://"  >contoh 4</a>
+
+    <p title="belajar">cek </p><br>
+    <p title="belajarpemograman">cek sambung</p><br> 
+    <p title="belajar-pemograman">cek strip</p><br>
+    <p title="belajar pemograman">cek spasi</p><br>
+    <p title="pemograman belajar">cek belakang</p><br>
+</body>
+</html>

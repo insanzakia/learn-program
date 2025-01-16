@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        #pertama p{
+            color: aqua;
+        }
+        #kedua > p{
+            color: red;
+        }
+        #ketiga + p {
+            color: brown;
+        }
+        #keempat ~ p {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="pertama">
+        <article>
+            <p>ini pertama </p>
+        </article>
+        <p>ini pertama </p>
+    </div>
+    <p>ini sejajar pertama</p>
+
+    <div id="kedua">
+        <article>
+            <p>ini kedua </p>
+        </article>
+        <p>ini kedua</p>
+    </div>
+    <p>ini sejajar kedua</p>
+    <div id="ketiga">
+        <article>
+            <p>ini ketiga</p>
+        </article>
+        <p>ini ketiga</p>
+    </div>
+    <p>ini sejajar ketiga</p>
+    <div id="keempat">
+        <article>
+            <p>ini keempat</p>
+        </article>
+        <p>ini keempat</p>
+    </div>
+    <p>ini sejajar keempat</p>
+    <p>ini sejajar keempat juga</p>
+    
+</body>
+</html>
