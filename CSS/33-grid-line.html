@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .kontainer{
+            display: grid;
+            grid-template-columns: [cline1] 200px [cline2] auto [cline3] 200px [cline4];
+            grid-template-rows:[rline1] 100px [rline2] 500px [rline3] 50px [rline4]
+
+        }
+        .konten{
+            background-color:antiquewhite ;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+
+        }
+        .header{
+            background-color: beige;
+            color: brown;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+        .footer{
+            background-color: darkgrey;
+            color: darkgreen;
+            grid-column-start: cline3;
+            grid-column-end: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+    </style>
+</head>
+<body>
+    <div class="kontainer">
+       <div class="header">
+            <h1>Selamat Datang di Labkesmasid.site</h1>
+       </div>
+       <div class="konten">
+            <h1>BBLKM Banjarbaru</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque explicabo, doloribus animi at soluta voluptas obcaecati suscipit officia blanditiis asperiores doloremque harum deserunt? Nam inventore suscipit sunt placeat voluptatum culpa.</p>
+       </div>
+       <div class="footer">
+            <p>Project by Insan Zakia</p>
+       </div>
+    </div>
+    
+</body>
+</html>m

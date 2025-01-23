@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .kontainer{
+            display: grid;
+            grid-template-columns:200px  auto  200px ;
+            grid-template-rows:100px  500px  50px;
+            grid-template-areas: 
+                "header header header"
+                ". konten ."
+                ". . footer";
+        }
+        .konten{
+            background-color:antiquewhite ;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            grid-area: konten;
+
+        }
+        .header{
+            background-color: beige;
+            color: brown;
+            grid-area: header;
+            
+        }
+        .footer{
+            background-color: darkgrey;
+            color: darkgreen;
+            grid-area: footer;          
+        }
+    </style>
+</head>
+<body>
+    <div class="kontainer">
+       <div class="header">
+            <h1>Selamat Datang di Labkesmasid.site</h1>
+       </div>
+       <div class="konten">
+            <h1>BBLKM Banjarbaru</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque explicabo, doloribus animi at soluta voluptas obcaecati suscipit officia blanditiis asperiores doloremque harum deserunt? Nam inventore suscipit sunt placeat voluptatum culpa.</p>
+       </div>
+       <div class="footer">
+            <p>Project by Insan Zakia</p>
+       </div>
+    </div>
+    
+</body>
+</html>
